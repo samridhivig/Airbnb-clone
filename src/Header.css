@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* component children space out from each other as much as they can */
+  align-items: center;
+  position: sticky; /* component sticks even on scrolling */
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  width: 100%; /* span the entire width */
+}
+
+.header__icon {
+  object-fit: contain; /* keep the aspect ratio so the image doesn't strech on responsive design etc */
+  height: 100px;
+  margin-left: 20px;
+}
+
+.header__center {
+  display: flex;
+  flex: 1; /* this compnent stretches and take as much space as it can */
+  align-items: center;
+  max-width: fit-content;
+  padding: 10px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+}
+
+.header__center > input {
+  border: none;
+  padding: 10px;
+  outline-width: 0; /* takes out the blue outline of input field */
+  width: 250px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15vw;
+  margin-right: 80px;
+}
